@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .gift-card {
-  border: 5px solid;
-  border-image: linear-gradient(to left, tomato, #5485d0) 1;
+  border: 10px solid transparent;
+  border-image: url(border.png) 30 round;
   width: 90%;
   margin: 100px auto;
+  border-radius: 10px;
+
 }
 
 .gift-card p {
@@ -29,4 +31,16 @@
   100% {
     background-position: 100% 50%;
   }
+}
+
+@media screen and (max-width: 680px){
+    .gift-card{
+        width: 90%;
+ 
+    }
+
+    .gift-card p{
+        font-size: 44px;
+      
+    }
 }
